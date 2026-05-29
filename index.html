@@ -72,9 +72,22 @@
   <style>
     html,
     body {
-      touch-action: manipulation;
-      overscroll-behavior: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
       -webkit-text-size-adjust: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
 
     .glass-effect {
