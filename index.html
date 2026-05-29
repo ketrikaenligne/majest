@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketrika Enligne - Télétravail & Indépendance Financière à Madagascar</title>
+  <meta name="description" content="Découvrez des opportunités de télétravail gratuites et sans investissement à Madagascar. Rejoignez Ketrika Enligne pour devenir financièrement indépendant.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./logoketrikaenligne.jfif">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0A2540',      /* Deep navy for text, titles, footer background */
+              navyLight: '#1C3D5A', /* Lighter navy */
+              turquoise: '#14B8A6', /* Tailwind Teal/Turquoise for buttons and interactions */
+              teal: '#0D9488',      /* Darker teal for gradients and badges */
+              mint: '#E6FDF9',      /* Pastel light water green for soft background gradients */
+              cardHover: '#F0FDFB'  /* Soft hover state */
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'premium': '0 10px 30px -10px rgba(10, 37, 64, 0.08)',
+            'premium-hover': '0 20px 40px -15px rgba(10, 37, 64, 0.12)',
+            'button': '0 4px 14px 0 rgba(20, 184, 166, 0.3)',
+            'button-hover': '0 6px 20px 0 rgba(20, 184, 166, 0.4)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #0A2540 30%, #14B8A6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .accent-gradient {
+      background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+    }
+
+    .accent-gradient-hover {
+      background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-[#0A2540] bg-gradient-to-tr from-white via-slate-50 to-[#E6FDF9] min-h-screen selection:bg-[#14B8A6]/20 selection:text-brand-navy">
+
+  <!-- ================= NAV BAR ================= -->
+  <header class="sticky top-0 z-50 w-full border-b border-slate-100/80 glass-effect transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo Left -->
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden border border-brand-mint shadow-inner flex items-center justify-center bg-white group-hover:scale-105 transition-transform duration-300">
+            <img src="./logoketrikaenligne.jfif" alt="Ketrika Enligne Logo" class="w-full h-full object-cover">
+          </div>
+          <span class="text-lg sm:text-xl font-extrabold tracking-tight text-brand-navy group-hover:text-brand-turquoise transition-colors duration-300">
+            KETRIKA <span class="text-brand-turquoise">ENLIGNE</span>
+          </span>
+        </a>
+
+        <!-- Right Action Button -->
+        <div>
+          <a href="https://t.me/ketrikaenligneperso" target="_blank" class="inline-flex items-center justify-center px-4 sm:px-6 h-11 sm:h-12 font-bold text-white text-xs sm:text-sm accent-gradient rounded-xl shadow-button hover:shadow-button-hover hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 space-x-2">
+            <i data-lucide="send" class="w-3.5 sm:w-4 h-3.5 sm:h-4"></i>
+            <span>Contact Telegram</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="relative">
+
+    <!-- Decorative background elements -->
+    <div class="absolute top-[10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-brand-mint/50 blur-[100px] pointer-events-none z-0"></div>
+    <div class="absolute top-[45%] right-[-10%] w-[500px] h-[500px] rounded-full bg-teal-500/5 blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- SECTION A: HERO & MISSION -->
+    <section id="hero" class="relative pt-10 pb-20 lg:pt-16 lg:pb-24 overflow-hidden z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Text column -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+            <div class="inline-flex items-center space-x-2 bg-[#E6FDF9] border border-brand-turquoise/20 px-4 py-2 rounded-full shadow-sm">
+              <span class="w-2.5 h-2.5 rounded-full accent-gradient animate-ping"></span>
+              <span class="text-sm font-bold text-brand-teal tracking-wide">Plateforme 100% Gratuite & Remote</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-navy leading-tight">
+              L'indépendance financière pour la <span class="gradient-text">jeunesse à Madagascar</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Ketrika Enligne a été conçu dans un but unique : accompagner et guider les jeunes Malgaches vers l'obtention de revenus réguliers sur Internet. Totalement gratuit et sans aucun investissement de départ requis, notre projet propose des opportunités concrètes de télétravail (remote) pour vous aider à atteindre une autonomie financière totale.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#offres" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-bold text-white accent-gradient rounded-xl shadow-button hover:shadow-button-hover hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 space-x-2">
+                <span>Voir l'offre disponible</span>
+                <i data-lucide="arrow-down" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <!-- Recruiter Card -->
+            <div class="mt-12 bg-white/70 border border-brand-turquoise/20 rounded-2xl p-6 md:p-8 shadow-premium text-left relative overflow-hidden backdrop-blur-md">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-brand-turquoise/10 to-transparent rounded-bl-full pointer-events-none"></div>
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-2 max-w-lg">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold text-brand-teal bg-[#E6FDF9] border border-brand-turquoise/10">
+                    <i data-lucide="briefcase" class="w-3.5 h-3.5 mr-1.5"></i>
+                    Recruteurs & Agences
+                  </span>
+                  <h3 class="text-lg font-bold text-brand-navy">Vous cherchez à recruter des talents en remote ?</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Si vous avez des offres à proposer à notre communauté de talents qualifiés à Madagascar, veuillez contacter l'administrateur directement.
+                  </p>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="https://t.me/ketrikaenligneperso" target="_blank" class="w-full md:w-auto inline-flex items-center justify-center px-6 py-3.5 font-bold text-brand-navy bg-brand-mint hover:bg-brand-turquoise/20 rounded-xl transition-all duration-300 border border-brand-turquoise/20 text-sm space-x-2">
+                    <i data-lucide="send" class="w-4 h-4 text-brand-teal"></i>
+                    <span>Contact Administrateur</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Graphic illustration column -->
+          <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div class="relative mx-auto max-w-[420px] lg:max-w-none">
+              <!-- Decorative ring background -->
+              <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-turquoise/20 to-teal-500/10 blur-xl pointer-events-none z-0"></div>
+              
+              <!-- Cover image wrapper -->
+              <div class="relative overflow-hidden rounded-3xl shadow-premium-hover border border-white/60 aspect-[4/3] sm:aspect-video lg:aspect-[4/3] bg-slate-900 group">
+                <img src="./photodecouverture.jpg" alt="Bannière Ketrika Enligne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/30 to-transparent"></div>
+                
+                <!-- Floating content badge over image -->
+                <div class="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/10 p-6 rounded-2xl border border-white/20 text-white">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-turquoise"></span>
+                    <p class="text-xs font-bold tracking-wider uppercase text-brand-turquoise">Ketrika Enligne</p>
+                  </div>
+                  <h3 class="text-lg font-bold mt-1 text-white">Rejoignez la révolution du travail en remote à Madagascar</h3>
+                  <div class="mt-4 flex items-center space-x-3 text-xs text-slate-300 border-t border-white/10 pt-3">
+                    <span class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-1 text-brand-turquoise"></i> Gratuit</span>
+                    <span class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-1 text-brand-turquoise"></i> Sans Investissement</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra small floating cards for interface visual rich -->
+              <div class="absolute -top-6 -left-6 bg-white border border-slate-100 p-4 rounded-2xl shadow-premium flex items-center space-x-3 animate-float hidden sm:flex">
+                <div class="w-10 h-10 rounded-xl accent-gradient flex items-center justify-center text-white">
+                  <i data-lucide="trending-up" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-semibold">Opportunités</div>
+                  <div class="text-sm font-extrabold text-brand-navy">Indépendance financière</div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D: OFFRE DE TRAVAIL DISPONIBLE & DÉTAILS DYNAMIQUE -->
+    <section id="offres" class="py-24 bg-gradient-to-b from-white/20 to-brand-mint/10 border-t border-slate-100/60 relative z-10 scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Tab Controller / Container for Dynamic Switch -->
+        <div id="jobs-container" class="relative min-h-[400px]">
+
+          <!-- 1. GRID VIEW OF JOBS -->
+          <div id="jobs-list-view" class="transition-all duration-500 opacity-100 transform translate-x-0">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold text-brand-teal bg-[#E6FDF9] border border-brand-turquoise/10">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 mr-1.5 animate-pulse"></i>
+                Recrutement En Cours
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+                Offre d'emploi en vedette
+              </h2>
+              <div class="h-1 w-20 accent-gradient mx-auto rounded-full"></div>
+              <p class="text-slate-600 font-normal leading-relaxed text-sm sm:text-base">
+                Découvrez notre opportunité de télétravail exclusive. Cliquez sur la carte ci-dessous pour afficher les détails du poste, les missions et postuler.
+              </p>
+            </div>
+
+            <!-- Single Job Centered Layout -->
+            <div class="max-w-2xl mx-auto">
+              
+              <!-- REAL JOB CARD 1 -->
+              <div onclick="openJobDetail('instagram-op')" class="bg-white border-2 border-brand-turquoise/20 hover:border-brand-turquoise rounded-3xl p-8 shadow-premium hover:shadow-premium-hover hover:scale-[1.02] transition-all duration-300 cursor-pointer flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 group relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-brand-turquoise/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+                  <!-- Custom Dark circular Logo with MA -->
+                  <div class="w-20 h-20 rounded-full overflow-hidden bg-black flex-shrink-0 flex items-center justify-center border border-slate-800 shadow-inner group-hover:scale-105 transition-transform duration-300">
+                    <img src="./logomajest.png" alt="MajestAgency Logo" class="w-full h-full object-cover">
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-brand-navy group-hover:text-brand-turquoise transition-colors duration-300">Opérateur Instagram</h3>
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                      <span class="text-sm font-semibold text-slate-500">MajestAgency</span>
+                      <span class="w-1.5 h-1.5 bg-slate-300 rounded-full hidden sm:inline-block"></span>
+                      <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600">Télétravail</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-center sm:items-end justify-between gap-4 w-full sm:w-auto border-t sm:border-0 pt-4 sm:pt-0 border-slate-100">
+                  <div class="px-4 py-2 rounded-full text-xs font-bold bg-[#E6FDF9] text-brand-navy border border-brand-turquoise/20 flex items-center">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5 mr-1.5 text-brand-teal"></i>
+                    Chaque lundi
+                  </div>
+                  <div class="w-12 h-12 rounded-2xl bg-brand-mint text-brand-teal flex items-center justify-center group-hover:bg-brand-turquoise group-hover:text-white shadow-sm transition-all duration-300">
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 2. DETAILS DYNAMIQUE VIEW PANEL (Hidden on start) -->
+          <div id="job-details-view" class="hidden transition-all duration-500 opacity-0 transform translate-x-12 max-w-4xl mx-auto">
+            
+            <!-- Breadcrumb Navigation & Back Button -->
+            <div class="mb-8">
+              <button onclick="closeJobDetail()" class="inline-flex items-center text-sm font-bold text-brand-navy hover:text-brand-turquoise transition-colors duration-300 space-x-2 py-2 px-4 rounded-xl border border-slate-200 hover:border-brand-turquoise/30 bg-white shadow-sm">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Retour à l'offre</span>
+              </button>
+            </div>
+
+            <!-- Job details card box -->
+            <div class="bg-white border border-slate-100 rounded-3xl shadow-premium overflow-hidden">
+              
+              <!-- Cover visual header inside card -->
+              <div class="accent-gradient p-8 md:p-12 text-white relative">
+                <div class="absolute inset-0 bg-black/10"></div>
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                  <div class="flex items-center space-x-6">
+                    <!-- Dynamic details logo container -->
+                    <div class="w-20 h-20 rounded-full overflow-hidden bg-black flex-shrink-0 flex items-center justify-center border-2 border-white/40 shadow-lg" id="detail-logo-container">
+                      <img src="./logomajest.png" alt="MajestAgency Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white/20 border border-white/20 text-white uppercase tracking-wider mb-2" id="detail-badge-sub">
+                        Télétravail
+                      </span>
+                      <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight" id="detail-title">
+                        C'est quoi un Opérateur Instagram ?
+                      </h2>
+                      <p class="text-slate-100 mt-1 text-base font-semibold" id="detail-agency">MajestAgency</p>
+                    </div>
+                  </div>
+
+                  <div class="flex-shrink-0 bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl p-4 text-center min-w-[150px]">
+                    <div class="text-xs text-slate-200 uppercase tracking-widest font-extrabold">Fréquence de paiement</div>
+                    <div class="text-lg font-black text-white mt-1" id="detail-frequency">Chaque lundi</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Two Column Detailed Description (Missions vs Prerequisites) -->
+              <div class="p-8 md:p-12 space-y-10">
+                
+                <!-- Main introduction paragraph -->
+                <div class="space-y-4">
+                  <h3 class="text-xl font-bold text-brand-navy flex items-center">
+                    <i data-lucide="info" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                    Description du poste
+                  </h3>
+                  <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Le rôle d'un opérateur Instagram consiste à créer et gérer des comptes sur le réseau afin de booster la visibilité d'un modèle en générant des vues et des clics sur les liens partagés en story.
+                  </p>
+                </div>
+
+                <hr class="border-slate-100">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                  
+                  <!-- Column 1: Vos Missions & Ce que nous offrons -->
+                  <div class="space-y-8">
+                    <div class="space-y-5">
+                      <h3 class="text-xl font-bold text-brand-navy flex items-center">
+                        <i data-lucide="target" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                        Vos Missions
+                      </h3>
+                      <ul class="space-y-3.5">
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Création et configuration de comptes Instagram dédiés.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Publication régulière de contenus (carrousels, réels et stories).</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Maintien d'une régularité et d'une rigueur constante dans le rythme des publications.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="space-y-5 pt-4 border-t border-slate-100">
+                      <h3 class="text-xl font-bold text-brand-navy flex items-center">
+                        <i data-lucide="gift" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                        Ce Que Nous Offrons
+                      </h3>
+                      <ul class="space-y-3.5">
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span><strong>Salaire attractif</strong> d'environ 2 000 000 Ariary par mois.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Une formation complète et éprouvée qui marche.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Abonnement de l'émulateur <strong>GeeLark</strong> à la charge de l'agence.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span>Numéros temporaires illimités offerts par l'agence.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></span>
+                          <span><strong>Dashboard personnel</strong> pour générer des légendes automatiquement et faciliter la création de comptes. Tout est automatisé : vous n'avez plus qu'à faire des copier-coller.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Column 2: Prérequis & Salaire -->
+                  <div class="space-y-8">
+                    <div class="space-y-5">
+                      <h3 class="text-xl font-bold text-brand-navy flex items-center">
+                        <i data-lucide="shield-alert" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                        Prérequis
+                      </h3>
+                      <ul class="space-y-3.5">
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="alert-circle" class="w-3 h-3"></i></span>
+                          <span>Configuration PC minimale : Windows 10, processeur Intel Core i5 (4ème génération ou équivalent) et 8 Go de RAM.</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="alert-circle" class="w-3 h-3"></i></span>
+                          <span>Excellente connexion Internet, de préférence Fibre optique ou Starlink (nécessaire pour téléverser une trentaine de réels par jour).</span>
+                        </li>
+                        <li class="flex items-start text-sm text-slate-600 leading-relaxed">
+                          <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center flex-shrink-0 mr-3 mt-0.5"><i data-lucide="alert-circle" class="w-3 h-3"></i></span>
+                          <span>Grande motivation et capacité d'apprentissage rapide.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="space-y-5 pt-4 border-t border-slate-100">
+                      <h3 class="text-xl font-bold text-brand-navy flex items-center">
+                        <i data-lucide="banknote" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                        Salaire & Rémunération
+                      </h3>
+                      <div class="bg-brand-mint/40 border border-brand-turquoise/20 rounded-2xl p-5 space-y-4">
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                          Chaque lundi, vous pouvez encaisser entre <strong class="text-brand-teal text-base">10 USD et 400 USD</strong> (hors primes, ce qui vous permet de gagner encore plus).
+                        </p>
+                        <p class="text-xs text-slate-600 font-semibold flex items-center">
+                          <i data-lucide="info" class="w-4 h-4 mr-2 text-brand-teal"></i>
+                          Plus vous travaillez, plus vous gagnez.
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                          <span class="font-bold text-slate-500">Moyen de paiement :</span>
+                          <span class="px-2.5 py-1 rounded-md bg-[#0A2540] text-[#00F2FE] font-extrabold tracking-wider">Crypto USDT</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <hr class="border-slate-100">
+
+                <!-- Section Preuves de Paiement -->
+                <div class="space-y-6">
+                  <div class="text-center sm:text-left space-y-1.5">
+                    <h3 class="text-xl font-bold text-brand-navy flex items-center justify-center sm:justify-start">
+                      <i data-lucide="image" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                      Preuves de Paiement
+                    </h3>
+                    <p class="text-xs text-slate-500 font-medium">Captures des classements et des revenus obtenus par nos opérateurs chaque semaine.</p>
+                  </div>
+
+                  <!-- Carousel Container -->
+                  <div class="relative max-w-2xl mx-auto overflow-hidden rounded-2xl border border-slate-100 bg-slate-900 group aspect-[4/3] sm:aspect-video shadow-premium">
+                    <!-- Carousel Slides -->
+                    <div class="flex transition-transform duration-500 ease-out h-full w-full" id="proofs-slides">
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve.png" alt="Preuve de paiement 1" class="max-h-full max-w-full object-contain">
+                      </div>
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve1.png" alt="Preuve de paiement 2" class="max-h-full max-w-full object-contain">
+                      </div>
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve2.png" alt="Preuve de paiement 3" class="max-h-full max-w-full object-contain">
+                      </div>
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve3.png" alt="Preuve de paiement 4" class="max-h-full max-w-full object-contain">
+                      </div>
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve4.png" alt="Preuve de paiement 5" class="max-h-full max-w-full object-contain">
+                      </div>
+                      <div class="min-w-full h-full flex items-center justify-center bg-slate-950">
+                        <img src="./preuve5.png" alt="Preuve de paiement 6" class="max-h-full max-w-full object-contain">
+                      </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevProof()" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md hover:bg-white/40 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 border border-white/10" aria-label="Slide précédent">
+                      <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button onclick="nextProof()" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md hover:bg-white/40 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 border border-white/10" aria-label="Slide suivant">
+                      <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-1.5 z-10" id="proofs-indicators">
+                      <span class="w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300" onclick="goToProof(0)"></span>
+                      <span class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all duration-300" onclick="goToProof(1)"></span>
+                      <span class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all duration-300" onclick="goToProof(2)"></span>
+                      <span class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all duration-300" onclick="goToProof(3)"></span>
+                      <span class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all duration-300" onclick="goToProof(4)"></span>
+                      <span class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all duration-300" onclick="goToProof(5)"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Detailed Application Instructions -->
+                <div class="pt-8 border-t border-slate-100 space-y-8">
+                  <div class="text-center sm:text-left space-y-2">
+                    <h3 class="text-xl font-bold text-brand-navy flex items-center justify-center sm:justify-start">
+                      <i data-lucide="send" class="w-5 h-5 text-brand-turquoise mr-2.5"></i>
+                      Comment Postuler ?
+                    </h3>
+                    <p class="text-sm text-slate-500">Deux méthodes s'offrent à vous pour rejoindre l'équipe de MajestAgency :</p>
+                  </div>
+
+                  <!-- Two Methods Layout -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Method 1: Classical -->
+                    <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl space-y-4">
+                      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-200 text-slate-700">
+                        Méthode 1 : Classique (Lente)
+                      </span>
+                      <h4 class="font-bold text-brand-navy">Processus standard</h4>
+                      <p class="text-xs text-slate-600 leading-relaxed">
+                        Rechercher et contacter les recruteurs de notre agence, remplir des formulaires de candidature et attendre les retours administratifs (délai d'attente pouvant aller jusqu'à plusieurs semaines).
+                      </p>
+                    </div>
+
+                    <!-- Method 2: Express -->
+                    <div class="bg-brand-mint/30 border border-brand-turquoise/20 p-6 rounded-2xl space-y-4 relative overflow-hidden">
+                      <div class="absolute top-0 right-0 px-3 py-1 bg-brand-turquoise text-white text-[10px] font-black uppercase tracking-wider rounded-bl-xl">
+                        Recommandé
+                      </div>
+                      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-brand-mint text-brand-teal">
+                        Méthode 2 : Express (Directe ⚡)
+                      </span>
+                      <h4 class="font-bold text-brand-navy">Entrée directe via Discord</h4>
+                      <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                        Rejoignez directement notre serveur Discord, ouvrez un ticket d'entretien et indiquez simplement le code de recommandation magique : <strong class="text-brand-teal font-extrabold">"STEVE M'ENVOIE"</strong>.
+                      </p>
+                      <a href="https://discord.gg/WhwhEUxHGh" target="_blank" class="w-full inline-flex items-center justify-center px-6 h-11 font-bold text-white accent-gradient rounded-xl shadow-button hover:shadow-button-hover transition-all duration-300 space-x-2 text-xs">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        <span>Rejoindre le Discord de l'agence</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Image Tutorial Steps -->
+                  <div class="space-y-4 pt-4">
+                    <h4 class="text-sm font-extrabold text-brand-navy uppercase tracking-wider text-center sm:text-left">
+                      Guide visuel pour la Méthode Express :
+                    </h4>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <!-- Step 1 Image -->
+                      <div class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="aspect-[4/3] bg-slate-950 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                          <img src="./image1.png" alt="Étape 1 : Rejoindre le serveur" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 space-y-1">
+                          <span class="text-[10px] font-extrabold text-brand-teal uppercase tracking-widest">Étape 01</span>
+                          <h5 class="text-sm font-bold text-brand-navy">Rejoindre le serveur</h5>
+                          <p class="text-xs text-slate-500 leading-relaxed">Cliquez sur l'invitation pour entrer dans le serveur Discord <strong>"Majest Office"</strong>.</p>
+                        </div>
+                      </div>
+
+                      <!-- Step 2 Image -->
+                      <div class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="aspect-[4/3] bg-slate-950 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                          <img src="./image2.png" alt="Étape 2 : Créer un ticket" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 space-y-1">
+                          <span class="text-[10px] font-extrabold text-brand-teal uppercase tracking-widest">Étape 02</span>
+                          <h5 class="text-sm font-bold text-brand-navy">Créer un ticket</h5>
+                          <p class="text-xs text-slate-500 leading-relaxed">Rendez-vous dans le salon <strong>#guide</strong> et cliquez sur le bouton <strong>"Create ticket"</strong>.</p>
+                        </div>
+                      </div>
+
+                      <!-- Step 3 Image -->
+                      <div class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="aspect-[4/3] bg-slate-950 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                          <img src="./image3.png" alt="Étape 3 : Écrire le mot magique" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 space-y-1">
+                          <span class="text-[10px] font-extrabold text-brand-teal uppercase tracking-widest">Étape 03</span>
+                          <h5 class="text-sm font-bold text-brand-navy">Saisir le code magique</h5>
+                          <p class="text-xs text-slate-500 leading-relaxed">Dans le ticket créé, tapez précisément : <strong class="text-brand-teal font-extrabold">"STEVE M'ENVOIE"</strong>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-navy text-slate-400 py-16 border-t border-slate-800/40 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Footer Info -->
+        <div class="md:col-span-6 space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl overflow-hidden border border-slate-700 bg-white flex items-center justify-center">
+              <img src="./logoketrikaenligne.jfif" alt="Ketrika Enligne Logo" class="w-full h-full object-cover">
+            </div>
+            <span class="text-lg font-black tracking-wider text-white">KETRIKA <span class="text-brand-turquoise">ENLIGNE</span></span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed max-w-md">
+            Une initiative solidaire pour propulser l'indépendance financière de la jeunesse malgache par le biais d'opportunités de travail à distance 100% gratuites et sans frais d'entrée.
+          </p>
+          <div class="flex items-center space-x-4 pt-2">
+            <a href="https://t.me/ketrikaenligneperso" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-300 hover:text-brand-turquoise hover:border-brand-turquoise/40 transition-colors duration-300" aria-label="Telegram link">
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Footer Info -->
+        <div class="md:col-span-6 space-y-6 md:pl-10">
+          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider">Nous Contacter</h4>
+          <div class="space-y-4 text-sm">
+            <p class="leading-relaxed max-w-md">
+              Pour soumettre une offre ou pour toute question d'ordre administratif, veuillez cliquer sur le bouton ci-dessous pour contacter directement le responsable sur Telegram.
+            </p>
+            <a href="https://t.me/ketrikaenligneperso" target="_blank" class="inline-flex items-center justify-center px-6 py-3.5 font-bold text-white accent-gradient rounded-xl shadow-button hover:shadow-button-hover transition-all duration-300 space-x-2 text-sm">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Rejoindre sur Telegram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-slate-800/80 my-10">
+
+      <!-- Bottom Credits -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; 2026 Ketrika Enligne. Tous droits réservés.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:underline hover:text-slate-400 transition-colors">Mentions légales</a>
+          <span class="text-slate-700">|</span>
+          <a href="#" class="hover:underline hover:text-slate-400 transition-colors">Confidentialité</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= CLIENT SIDE JAVASCRIPT ================= -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Sticky Header Scroll Shadow Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('shadow-md', 'bg-white/90');
+        navbar.classList.remove('bg-white/75');
+      } else {
+        navbar.classList.remove('shadow-md', 'bg-white/90');
+        navbar.classList.add('bg-white/75');
+      }
+    });
+
+    const jobsListView = document.getElementById('jobs-list-view');
+    const jobDetailsView = document.getElementById('job-details-view');
+
+    function openJobDetail(jobKey) {
+      if (jobKey !== 'instagram-op') return;
+
+      // Transition animation
+      // 1. Fade/Slide list out
+      jobsListView.classList.add('opacity-0', '-translate-x-12');
+      setTimeout(() => {
+        jobsListView.classList.add('hidden');
+        
+        // 2. Prepare and reveal details panel
+        jobDetailsView.classList.remove('hidden');
+        // Force reflow
+        jobDetailsView.offsetHeight;
+        jobDetailsView.classList.remove('opacity-0', 'translate-x-12');
+        jobDetailsView.classList.add('opacity-100', 'translate-x-0');
+        
+        // Scroll to details view section nicely
+        document.getElementById('offres').scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+
+    function closeJobDetail() {
+      // Transition animation
+      // 1. Fade/Slide details out
+      jobDetailsView.classList.remove('opacity-100', 'translate-x-0');
+      jobDetailsView.classList.add('opacity-0', 'translate-x-12');
+      
+      setTimeout(() => {
+        jobDetailsView.classList.add('hidden');
+        
+        // 2. Reveal and slide back list
+        jobsListView.classList.remove('hidden');
+        // Force reflow
+        jobsListView.offsetHeight;
+        jobsListView.classList.remove('opacity-0', '-translate-x-12');
+        jobsListView.classList.add('opacity-100', 'translate-x-0');
+
+        // Scroll to job offers section nicely
+        document.getElementById('offres').scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+
+    // Carousel logic for proofs
+    let currentProofIndex = 0;
+    const totalProofs = 6;
+    const slidesContainer = document.getElementById('proofs-slides');
+    const indicators = document.getElementById('proofs-indicators').children;
+
+    function updateProofsCarousel() {
+      if (!slidesContainer || !indicators.length) return;
+      slidesContainer.style.transform = `translateX(-${currentProofIndex * 100}%)`;
+      // Update indicators
+      for (let i = 0; i < indicators.length; i++) {
+        if (i === currentProofIndex) {
+          indicators[i].classList.remove('bg-white/30');
+          indicators[i].classList.add('bg-white', 'w-4');
+        } else {
+          indicators[i].classList.remove('bg-white', 'w-4');
+          indicators[i].classList.add('bg-white/30');
+        }
+      }
+    }
+
+    function prevProof() {
+      currentProofIndex = (currentProofIndex - 1 + totalProofs) % totalProofs;
+      updateProofsCarousel();
+    }
+
+    // Auto slide interval (optional, but let's make it manual and interactive as requested, with next/prev calls)
+    function nextProof() {
+      currentProofIndex = (currentProofIndex + 1) % totalProofs;
+      updateProofsCarousel();
+    }
+
+    function goToProof(index) {
+      currentProofIndex = index;
+      updateProofsCarousel();
+    }
+
+    // Initialize carousel on load
+    updateProofsCarousel();
+  </script>
+
+</body>
+</html>
