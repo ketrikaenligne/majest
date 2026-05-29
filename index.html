@@ -51,8 +51,32 @@
       }
     }
   </script>
+  <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
 
+    document.addEventListener('dblclick', function (e) {
+      e.preventDefault();
+    }, { passive: false });
+
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+      const now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+  </script>
   <style>
+    html,
+    body {
+      touch-action: manipulation;
+      overscroll-behavior: none;
+      -webkit-text-size-adjust: 100%;
+    }
+
     .glass-effect {
       background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(12px);
@@ -692,7 +716,8 @@
                             02</span>
                           <h5 class="text-sm font-bold text-brand-navy">Créer un ticket</h5>
                           <p class="text-xs text-slate-500 leading-relaxed">Rendez-vous dans le salon
-                            <strong>#guide</strong> et cliquez sur le bouton <strong>"Create ticket"</strong>.</p>
+                            <strong>#guide</strong> et cliquez sur le bouton <strong>"Create ticket"</strong>.
+                          </p>
                         </div>
                       </div>
 
@@ -709,7 +734,8 @@
                             03</span>
                           <h5 class="text-sm font-bold text-brand-navy">Saisir le code magique</h5>
                           <p class="text-xs text-slate-500 leading-relaxed">Dans le ticket créé, tapez précisément :
-                            <strong class="text-brand-teal font-extrabold">"STEVE M'ENVOIE"</strong>.</p>
+                            <strong class="text-brand-teal font-extrabold">"STEVE M'ENVOIE"</strong>.
+                          </p>
                         </div>
                       </div>
                     </div>
